@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <title>WEB制作課題１</title>
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header class="header site-width">
+
+        <div class="header__inner">
+
+            <div class="header__logo"><img src="images/logo.svg" alt="logo"></div>
+            <nav class="nav">
+                <ul class="nav__menu">
+                    <li class="nav__item">Trips</li>
+                    <li class="nav__item">Messages</li>
+                    <li class="nav__item">Help</li>
+                </ul>
+                <div class="header__oval"><img src="images/oval.png" alt="oval"></div>
+            </nav>
+        </div>
+    </header>
+    <main class="main site-width">
+        <!-- 最初のセクション -->
+        <section class="catch">
+            <h1 class="catch__title">Share your passion with the world.</h1>
+            <p class="catch__text">Create unique experiences around your city,
+                and earn extra money <br> by bringing others along.</p>
+            <div class="catch__link"><a href="">Create an experience</a></div>
+        </section>
+        <!-- ビデオのセクション -->
+        <section class="news">
+            <div class="news__container">
+                <h2 class="news__title">A sample of what great hosts do.</h2>
+                <p class="news__text">Hosts are chefs, hikers, or just knowledgeable locals who want to <br> show
+                    others
+                    little-known pockets of their community. They can host an experience or multiple ones over the
+                    course of
+                    a few days.</p>
+            </div>
+            <div class="news__video"><img src="images/video@2x.jpg" alt="video" class="video"></div>
+        </section>
+        <!-- 数値のセクション -->
+        <section class="performance">
+            <div class="performance__container">
+                <div class="performance__unit">
+                    <h1 class="performance__value">86k</h1>
+                    <p class="performance__caption">experiences shared</p>
+                </div>
+                <div class="performance__line"></div>
+                <div class="performance__unit">
+                    <h1 class="performance__value">156</h1>
+                    <p class="performance__caption">cities available</p>
+                </div>
+                <div class="performance__line"></div>
+                <div class="performance__unit">
+                    <h1 class="performance__value">$66</h1>
+                    <p class="performance__caption">average price</p>
+                </div>
+                <div class="performance__line"></div>
+                <div class="performance__unit">
+                    <h1 class="performance__value">22k</h1>
+                    <p class="performance__caption">pictures taken</p>
+                </div>
+                <div class="performance__line"></div>
+                <div class="performance__unit performance__mr">
+                    <h1 class="performance__value">975</h1>
+                    <p class="performance__caption">5 star ratings</p>
+                </div>
+            </div>
+        </section>
+        <!-- 人物画像のセクション -->
+        <section class="promote">
+            <div class="promote__imgContainer">
+                <img src="images/autumn-goodman-242825@2x.jpg" alt="image" class="promote__goodman">
+                <h2 class="promote__imgTitle">Meet Angela: The evolution of African clothing </h2>
+                <img src="images/invalid-name.svg" alt="image" class="promote__button">
+            </div>
+            <ul class="promote__unitContainer">
+                <li class="promote__unit">
+                    <img src="images/microphone.svg" alt="image" class="promote__logo">
+                    <div class="promote__textContainer">
+                        <h3 class="promote__subtitle">Get more exposure</h3>
+                        <p class="promote__description">Millions of travellers can find and book your experience in an
+                            instant.</p>
+                    </div>
+                </li>
+                <li class="promote__unit">
+                    <img src="images/fill-1.svg" alt="image" class="promote__logo">
+                    <div class="promote__textContainer">
+                        <h3 class="promote__subtitle">Promote your brand</h3>
+                        <p class="promote__description">Have a shareable profile with photos, videos, and reviews.</p>
+                    </div>
+                </li>
+                <li class="promote__unit">
+                    <img src="images/meetpeople.svg" alt="image" class="promote__logo">
+                    <div class="promote__textContainer">
+                        <h3 class="promote__subtitle">Meet locals like you</h3>
+                        <p class="promote__description">Join a global community of hosts. Connect through meetups &
+                            events.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-- city選択のセクション -->
+        <section class="recommend">
+            <h2 class="recommend__title">Ready to host an experience in your city?</h2>
+            <p class="recommend__text">Start by designing the experience you have in mind. We’ll guide you through each
+                <br>
+                step. If your experience meets the quality standards, you’ll hear more about what’s <br>
+                next.
+            </p>
+            <div class="recommend__formContainer">
+                <form action="GET" class="recommend__form">
+                    <div class="recommend__selectContainer">
+                        <select class="button__select-city">
+                            <option value="">Select a city</option>
+                            <option value="">Tokyo</option>
+                        </select>
+                        <div class="select__arrow">
+                            <div class="select__arrow--up"></div>
+                            <div class="select__arrow--down"></div>
+                            <div class="select__arrow--blank"></div>
+                        </div>
+                    </div>
+                    <div class="recommend__submitContainer">
+                        <input type="submit" value="Create an experience" name="recommend__submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- メニューのセクション -->
+        <section class="menu">
+            <div class="menu__configrationContainer">
+                <form action="GET" class="menu__configration">
+                    <div class="menu__content">
+                        <select class="button__select-lang">
+                            <option value="">English</option>
+                            <option value="">Japanese</option>
+                        </select>
+                        <div class="select__arrow select__arrow--adjust">
+                            <div class="select__arrow--up"></div>
+                            <div class="select__arrow--down"></div>
+                            <div class="select__arrow--blank"></div>
+                        </div>
+                    </div>
+                    <div class="menu__content">
+                        <select class="button__select-lang" id="" class="">
+                            <option>EUR</option>
+                            <option>JP</option>
+                        </select>
+                        <div class="select__arrow select__arrow--adjust">
+                            <div class="select__arrow--up"></div>
+                            <div class="select__arrow--down"></div>
+                            <div class="select__arrow--blank"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="listMenu">
+                <div class="menuUnit">
+                    <h3 class="menuUnit__item">Airbnb</h3>
+                    <ul class="menuUnit__linksContaner">
+                        <li class="menuUnit__link">About us</li>
+                        <li class="menuUnit__link">Careers</li>
+                        <li class="menuUnit__link">Press</li>
+                        <li class="menuUnit__link">Policies</li>
+                        <li class="menuUnit__link">Help</li>
+                        <li class="menuUnit__link">Diversity</li>
+                    </ul>
+                </div>
+                <div class="menuUnit">
+                    <h3 class="menuUnit__item">Discover</h3>
+                    <ul class="menuUnit__linksContaner">
+                        <li class="menuUnit__link">Trust & Safety</li>
+                        <li class="menuUnit__link">Travel Credit</li>
+                        <li class="menuUnit__link">Airbnb Citizen</li>
+                        <li class="menuUnit__link">Business Travel</li>
+                        <li class="menuUnit__link">Guidebooks</li>
+                        <li class="menuUnit__link">Airbnbmag</li>
+                    </ul>
+                </div>
+                <div class="menuUnit margin-left">
+                    <h3 class="menuUnit__item">Hosting</h3>
+                    <ul class="menuUnit__linksContaner">
+                        <li class="menuUnit__link">Why Host</li>
+                        <li class="menuUnit__link">Hospitality</li>
+                        <li class="menuUnit__link">Responsible Hosting</li>
+                        <li class="menuUnit__link">Community Centre</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- フッター -->
+        <hr class="onFooter">
+    </main>
+    <footer class="footer site-width">
+        <div class="footer__inner">
+            <div class="footer__logo"><img src="images/footer-logo.svg" alt="image"></div>
+            <ul class="footer__nav">
+                <li class="footer__navItem footer__adjustMargin">Terms</li>
+                <li class="footer__navItem footer__adjustMargin">Privacy</li>
+                <li class="footer__navItem">Site</li>
+                <li class="footer__navItem">Map</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
